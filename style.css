@@ -1,0 +1,27 @@
+
+body header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    min-width: 100%;
+}
+
+.header-svg {
+    flex: 1;
+    justify-self: center;
+}
+
+body header svg {
+    height: 30px;
+    width: auto;
+}
+
+.header-icons {
+    flex: 1;
+}
+
+.header-buttons {
+    flex: 1;
+}
+

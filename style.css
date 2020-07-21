@@ -1,27 +1,41 @@
 
 body header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
     height: 50px;
-    min-width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;    ;
+    border: 1px solid #ccc;
+    align-items: center;
 }
 
 .header-svg {
-    flex: 1;
-    justify-self: center;
+   justify-self: center;
 }
 
 body header svg {
-    height: 30px;
+    height: 25px;
     width: auto;
+    justify-self: center;
 }
 
-.header-icons {
-    flex: 1;
+.header-icons #bars-icon {
+    padding:0px 20px;
+    
 }
 
 .header-buttons {
-    flex: 1;
+    justify-self: end;
+    
 }
 
+.header-buttons button {
+    background-color: rgb(86, 123, 149);
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid rgb(50, 104, 145);
+    font-size: 11px;
+    padding: 8px;
+    font-weight: bold;
+
+}

@@ -1,5 +1,10 @@
+body {
+    min-width: 100%;
+}
 
 body header {
+    left: 0px;
+    right: 0px;
     display: grid;
     height: 50px;
     max-width: 100%;
@@ -19,23 +24,69 @@ body header svg {
     justify-self: center;
 }
 
+.header-icons {
+    align-self: center;
+}
+
 .header-icons #bars-icon {
-    padding:0px 20px;
-    
+    padding: 0px 20px;    
 }
 
 .header-buttons {
     justify-self: end;
-    
+    align-content: center;
+
 }
 
 .header-buttons button {
     background-color: rgb(86, 123, 149);
-    border-radius: 5px;
+    border-radius: 2px;
     color: #fff;
     border: 1px solid rgb(50, 104, 145);
     font-size: 11px;
     padding: 8px;
     font-weight: bold;
+
+}
+
+main article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main article .section-1 {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main article h1 {
+    display: block;
+    font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+    font-size: 38px;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 60px;
+    line-height: 45px;
+}
+
+main article section img {
+    width: 1200px;
+    margin-top: 30px;
+}
+
+main article section .main-picture-description {
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    color: #666;
+}
+
+main article section .main-picture-credentials {
+    display: inline-block;
+    color: #666;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    font-size: 12px;
 
 }

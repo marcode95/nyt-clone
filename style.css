@@ -235,3 +235,54 @@ main article section .main-picture-credentials {
     width: 50%;
 }
 
+.section-3 {
+   width: 960px;
+}
+
+.section-3-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 5px;
+}
+
+.section-3-header h2 {
+    font-weight: bold;
+    font-family: nyt-cheltenham,georgia,times new roman,times,serif;
+    line-height: 20px;
+}
+.section-3-grid div img {
+    max-height: 100px;
+    width: auto;
+    font-family: nyt-franklin,arial,helvetica,sans-serif;
+
+}
+
+
+.section-3-grid span {
+    font-weight: bold;
+    font-size: 14px;
+   
+}
+.inflation-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-3-footer {
+    margin-top: 50px;
+}
+
+.section-3-footer hr  {
+    width: 10%;
+    display: block;
+    float: left;
+}
+
+.section-3-footer p {
+    display: block;
+    float: left;
+    font-family: nyt-franklin,arial,helvetica,sans-serif;
+    font-size: 14px;
+}

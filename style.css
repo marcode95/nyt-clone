@@ -1,42 +1,12 @@
+
+/*global properties*/
+
 body {
     min-width: 100%;
     color: #333;
 }
 
-body header {
-    left: 0px;
-    right: 0px;
-    display: grid;
-    height: 50px;
-    max-width: 100%;
-    padding: 10px;
-    grid-template-columns: 1fr 1fr 1fr;    ;
-    border: 1px solid #ccc;
-    align-items: center;
-}
-
-.header-svg {
-   justify-self: center;
-}
-
-body header svg {
-    height: 25px;
-    width: auto;
-    justify-self: center;
-}
-
-.header-icons {
-    align-self: center;
-}
-
-.header-icons #bars-icon {
-    padding: 0px 20px;    
-}
-
-.header-buttons {
-    justify-self: end;
-    align-content: center;
-}
+/*properties for buttons in header and in article footer*/
 
 body .blue-buttons {
     background-color: rgb(86, 123, 149);
@@ -46,8 +16,65 @@ body .blue-buttons {
     font-size: 11px;
     padding: 8px;
     font-weight: bold;
-
 }
+
+/*properties for subheadlines in article*/
+
+body h2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+}
+
+/*property for width of article paragraphs*/
+
+.article-paragraph-width {
+    width: 40%;
+}
+
+/*header*/
+
+body header {
+    left: 0px;
+    right: 0px;
+    display: grid;
+    height: auto;
+    max-width: 100%;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;    ;
+    border: 1px solid #ccc;
+    align-items: center;
+}
+
+/*left header*/
+
+.header-icons {
+    align-self: center;
+}
+
+.header-icons #bars-icon {
+    padding: 0px 20px;    
+}
+
+/*center header*/
+
+.header-svg {
+   justify-self: center;
+}
+
+body header svg {
+    height: 25px;
+    width: auto;
+}
+
+/*right header*/
+
+.header-buttons {
+    justify-self: end;
+    align-content: center;
+}
+
+/*main article*/
 
 main article {
     display: flex;
@@ -55,6 +82,8 @@ main article {
     align-items: center;
     position: relative;
 }
+
+/*main article header with headline*/
 
 main article .section-1 {
     width: 80vw;
@@ -89,10 +118,9 @@ main article section .main-picture-credentials {
     font-family: nyt-imperial,georgia,'times new roman',times,serif;
     font-size: 12px;
 }
+
 .section-2 {
-    width: 40%;
     position: relative;
-    margin-bottom: 30px;
 }
 
 .section-2-header {
@@ -146,6 +174,8 @@ main article section .main-picture-credentials {
     background-color: white;
 }
 
+/*article paragraphs starting here*/
+
 .article-text {
     font-family: nyt-imperial,georgia,'times new roman',times,serif;
     font-size: 1.35rem;
@@ -181,11 +211,7 @@ main article section .main-picture-credentials {
     text-decoration: none;
 }
 
-body h2 {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: nyt-imperial,georgia,'times new roman',times,serif;
-}
+/*sidebar*/
 
 .editor-pick {
     position: absolute;
@@ -233,8 +259,11 @@ body h2 {
     width: 50%;
 }
 
+/*big grid container in article*/
+
 .section-3 {
    width: 960px;
+   margin: 30px 0;
 }
 
 .section-3-grid {
@@ -266,6 +295,10 @@ body h2 {
     align-items: center;
 }
 
+.section-3-grid p {
+    font-size: 14px;
+}
+
 .section-3-footer {
     margin-top: 50px;
 }
@@ -283,10 +316,7 @@ body h2 {
     font-size: 14px;
 }
 
-.section-4 {
-    width: 40%;
-    margin: 30px 0;
-}
+/*youtube video in article*/
 
 .section-4 iframe {
     width: 100%;
@@ -310,6 +340,8 @@ body .video-image-description span {
     line-height: 1.25rem;
 }
 
+/*picture in article*/
+
 .main-picture-2 {
     display: flex;
     flex-direction: column;
@@ -321,9 +353,9 @@ body .video-image-description span {
     width: 100%;
 }
 
-.section-5 {
-    width: 40%;
-}
+.article-paragraph-width
+
+/*article footer*/
 
 .article-footer-toptext {
     font-family: nyt-franklin, helvetica, arial, sans-serif;

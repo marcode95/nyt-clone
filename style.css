@@ -1,5 +1,6 @@
 body {
     min-width: 100%;
+    color: #333;
 }
 
 body header {
@@ -53,6 +54,7 @@ main article {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 main article .section-1 {
@@ -88,11 +90,10 @@ main article section .main-picture-credentials {
     color: #666;
     font-family: nyt-imperial,georgia,'times new roman',times,serif;
     font-size: 12px;
-
 }
-
 .section-2 {
     width: 40%;
+    position: relative;
 }
 
 .section-2-header {
@@ -182,3 +183,22 @@ main article section .main-picture-credentials {
     text-decoration: none;
 }
 
+.section-2 h2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+}
+
+.editor-pick {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    right: -300px;
+    
+}
+.editor-pick img {
+    height: 50px;
+    width: 50px;
+}

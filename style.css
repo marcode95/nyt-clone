@@ -100,14 +100,14 @@ main article {
   margin-right: 12px;
 }
 
+.main-picture-2 img {
+    width: 100%;
+  }
+
 .theory-of-inflation-grid div img {
   max-height: 100px;
   width: auto;
   font-family: nyt-franklin, arial, helvetica, sans-serif;
-}
-
-.main-picture-2 img {
-  width: 100%;
 }
 
 /* main article header with headline */
@@ -204,7 +204,7 @@ main article section .main-picture-credentials {
   font-weight: 700;
   height: 25px;
   line-height: 15px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 .right-footer-small-links a {
@@ -229,6 +229,18 @@ main article section .main-picture-credentials {
   text-decoration: none;
 }
 
+.article-text a {
+    color: #326891;
+  }
+
+.editor-pick-section a:hover {
+  text-decoration: underline;
+}
+
+.article-beginning-header p a {
+    color: black;
+}
+
 .main-footer-flex-container a:hover {
   text-decoration: underline;
 }
@@ -238,17 +250,9 @@ main article section .main-picture-credentials {
   text-decoration: none;
 }
 
-.article-text a {
-  color: #326891;
-}
-
 .article-text a:hover {
   color: #326891;
   text-decoration: none;
-}
-
-.editor-pick-section a:hover {
-  text-decoration: underline;
 }
 
 .article-beginning {
@@ -259,10 +263,6 @@ main article section .main-picture-credentials {
   margin: 20px 0;
   font-family: nyt-franklin, helvetica, arial, sans-serif;
   font-weight: bold;
-}
-
-.article-beginning-header p a {
-  color: black;
 }
 
 .subfooter a:hover {
@@ -360,7 +360,7 @@ main article section .main-picture-credentials {
 }
 
 .editor-pick-section a {
-  font-family: georgia, "times new roman";
+  font-family: nyt-franklin, georgia, "times new roman";;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -393,6 +393,7 @@ main article section .main-picture-credentials {
   font-weight: bold;
   font-size: 14px;
 }
+
 .inflation-flex {
   display: flex;
   flex-direction: column;
@@ -524,7 +525,7 @@ body .video-image-description span {
 }
 
 .more-image-description {
-  font-family: georgia, "times new roman";
+  font-family: nyt-franklin, georgia, "times new roman";
   color: rgb(153, 153, 153);
   font-size: 0.625rem;
   margin: 5px 0 8px 0;

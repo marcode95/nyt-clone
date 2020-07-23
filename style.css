@@ -84,7 +84,7 @@ body header nav {
   align-content: center;
 }
 
-/* main article */
+/* main article and images */
 
 main article {
   display: flex;
@@ -110,7 +110,7 @@ main article {
   font-family: nyt-franklin, arial, helvetica, sans-serif;
 }
 
-/* main article header with headline and links */
+/* main article header */
 
 main article .article-showcase {
   width: 80vw;
@@ -156,17 +156,9 @@ main article section .main-picture-credentials {
 
 /* Links */
 
-.grey-background-buttons a {
-  color: black;
-}
-
 .mid-text-advertisement a {
   color: #326891;
   text-decoration: none;
-}
-
-.share-comment-buttons a {
-  color: black;
 }
 
 .article-footer-toptext a {
@@ -267,6 +259,17 @@ main article section .main-picture-credentials {
   text-decoration: none;
 }
 
+.subfooter a:hover {
+  text-decoration: underline;
+}
+
+.article-beginning-header p a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* article beginning */
+
 .article-beginning {
   position: relative;
 }
@@ -275,15 +278,6 @@ main article section .main-picture-credentials {
   margin: 20px 0;
   font-family: nyt-franklin, helvetica, arial, sans-serif;
   font-weight: bold;
-}
-
-.subfooter a:hover {
-  text-decoration: underline;
-}
-
-.article-beginning-header p a:hover {
-  color: black;
-  text-decoration: none;
 }
 
 .article-beginning-title {

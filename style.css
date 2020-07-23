@@ -45,8 +45,8 @@ body header nav {
   position: fixed;
   background-color: white;
   z-index: 2;
-  left: 0px;
-  right: 0px;
+  left: 0;
+  right: 0;
   display: grid;
   height: auto;
   max-width: 100%;
@@ -63,7 +63,7 @@ body header nav {
 }
 
 .header-icons #bars-icon {
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 
 /* center header */
@@ -134,7 +134,7 @@ main article section .main-picture-credentials {
 }
 
 .article-beginning-header {
-  margin: 20px 0px;
+  margin: 20px 0;
   font-family: nyt-franklin, helvetica, arial, sans-serif;
   font-weight: bold;
 }
@@ -152,7 +152,7 @@ main article section .main-picture-credentials {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
 .article-beginning-title p {

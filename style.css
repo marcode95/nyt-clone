@@ -389,3 +389,31 @@ body .video-image-description span {
 .clear {
     clear: both;
 }
+
+.topfooter {
+    display: flex;
+}
+
+.more-section {
+    max-width: 60%;
+    margin-left: 50px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.more-section-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+   
+}
+
+.more-section-grid-container img{
+    width: 250px;
+    height: auto;
+}
+
+.editor-pick-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}

@@ -110,7 +110,7 @@ main article {
   font-family: nyt-franklin, arial, helvetica, sans-serif;
 }
 
-/* main article header with headline and links*/
+/* main article header with headline and links */
 
 main article .article-showcase {
   width: 80vw;
@@ -157,7 +157,7 @@ main article section .main-picture-credentials {
 /* Links */
 
 .grey-background-buttons a {
-    color: black;
+  color: black;
 }
 
 .mid-text-advertisement a {
@@ -232,7 +232,7 @@ main article section .main-picture-credentials {
 }
 
 .editor-pick-section a {
-  font-family: nyt-franklin, georgia, "times new roman";;
+  font-family: georgia, "times new roman", arial;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -245,12 +245,12 @@ main article section .main-picture-credentials {
   color: #326891;
 }
 
-.editor-pick-section a:hover {
-  text-decoration: underline;
-}
-
 .article-beginning-header p a {
   color: black;
+}
+
+.editor-pick-section a:hover {
+  text-decoration: underline;
 }
 
 .main-footer-flex-container a:hover {
@@ -527,7 +527,7 @@ body .video-image-description span {
 }
 
 .more-image-description {
-  font-family: nyt-franklin, georgia, "times new roman";
+  font-family: georgia, "times new roman", arial;
   color: rgb(153, 153, 153);
   font-size: 0.625rem;
   margin: 5px 0 8px 0;

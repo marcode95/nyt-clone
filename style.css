@@ -14,6 +14,8 @@ main {
     align-items: center;
 }
 
+
+
 /*properties for buttons in header and in article footer*/
 
 body .blue-buttons {
@@ -44,6 +46,8 @@ body h2 {
 
 body header nav{
     position: fixed;
+    background-color: white; 
+    z-index: 2;
     left: 0px;
     right: 0px;
     display: grid;
@@ -94,7 +98,7 @@ main article {
 
 /*main article header with headline*/
 
-main article .section-1 {
+main article .article-showcase {
     width: 80vw;
     display: flex;
     flex-direction: column;
@@ -111,7 +115,7 @@ main article h1 {
     line-height: 45px;
 }
 
-main article section img {
+main article .article-showcase img {
     width: 1200px;
     margin-top: 30px;
 }
@@ -128,42 +132,42 @@ main article section .main-picture-credentials {
     font-size: 12px;
 }
 
-.section-2 {
+.article-beginning {
     position: relative;
 }
 
-.section-2-header {
+.article-beginning-header {
     margin: 20px 0px;
     font-family: nyt-franklin,helvetica,arial,sans-serif;
     font-weight: bold;
 }
 
-.section-2-header h4 a {
+.article-beginning-header h4 a {
     color: black;
 }
 
-.section-2-header h4 a:hover {
+.article-beginning-header h4 a:hover {
     color: black;
     text-decoration: none;
 }
 
-.section-2-title {
+.article-beginning-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0px;
 }
 
-.section-2-title p {
+.article-beginning-title p {
     font-family: nyt-franklin,helvetica,arial,sans-serif;
     font-size: 0.8125rem;
 }
 
-.section-2-icons {
+.article-beginning-icons {
     display: flex;
 }
 
-.section-2-icons li {
+.article-beginning-icons li {
     margin-left: 10px;
 }
 
@@ -173,11 +177,12 @@ main article section .main-picture-credentials {
     width: 35px;
     height: 35px;
     border: none;
+    margin-left: 10px;
 }
 
 .share-comment-buttons {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    margin-left: 5px;
     border: none;
     font-size: 25px;
     background-color: white;
@@ -224,11 +229,11 @@ main article section .main-picture-credentials {
 
 .editor-pick {
     position: absolute;
+    top: 50%;
+    right: -300px;
+    bottom: auto;
     display: flex;
     flex-direction: column;
-    top: 50%;
-    bottom: auto;
-    right: -45%;
     width: 220px;
     font-family: nyt-franklin, helvetica, arial, sans-serif;
     font-weight: bold;
@@ -249,48 +254,57 @@ main article section .main-picture-credentials {
 
 .editor-pick-section {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .editor-pick-section img {
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
+    margin-top: 12px;
+    margin-right: 12px;
 }
 
-.editor-pick-section p {
+.editor-pick-section a {
     font-family: nyt-cheltenham-small, georgia, "times new roman";
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     color: rgb(51, 51, 51);
     width: 50%;
+    text-decoration: none;
 }
+
+.editor-pick-section a:hover {
+    text-decoration: underline;
+} 
 
 /*big grid container in article*/
 
-.section-3 {
+.theory-of-inflation {
    width: 960px;
    margin: 30px 0;
 }
 
-.section-3-grid {
+.theory-of-inflation-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     gap: 5px;
 }
 
-.section-3-header h2 {
+.theory-of-inflation-header h2 {
     font-weight: bold;
     font-family: nyt-cheltenham,georgia,times new roman,times,serif;
     line-height: 20px;
 }
-.section-3-grid div img {
+.theory-of-inflation-grid div img {
     max-height: 100px;
     width: auto;
     font-family: nyt-franklin,arial,helvetica,sans-serif;
 }
 
-.section-3-grid span {
+.theory-of-inflation-grid span {
     font-weight: bold;
     font-size: 14px;
    
@@ -301,21 +315,21 @@ main article section .main-picture-credentials {
     align-items: center;
 }
 
-.section-3-grid p {
+.theory-of-inflation-grid p {
     font-size: 14px;
 }
 
-.section-3-footer {
+.theory-of-inflation-footer {
     margin-top: 50px;
 }
 
-.section-3-footer hr  {
+.theory-of-inflation-footer hr  {
     width: 10%;
     display: block;
     float: left;
 }
 
-.section-3-footer p {
+.theory-of-inflation-footer p {
     display: block;
     float: left;
     font-family: nyt-franklin,arial,helvetica,sans-serif;
@@ -324,7 +338,7 @@ main article section .main-picture-credentials {
 
 /*youtube video in article*/
 
-.section-4 iframe {
+.mid-article-paragraphs-with-video iframe {
     width: 100%;
     height: 350px;
     border: none;
@@ -353,13 +367,12 @@ body .video-image-description span {
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
+    margin-top: 30px;
 }
 
 .main-picture-2 img {
     width: 100%;
 }
-
-.article-paragraph-width
 
 /*article footer*/
 
@@ -378,7 +391,7 @@ body .video-image-description span {
     margin: 20px 0 60px 0;
 }
 
-.article-footer-text a:hover {
+.article-footer-toptext a:hover {
     color: rgb(102, 102, 102);
     text-decoration: none;
 }

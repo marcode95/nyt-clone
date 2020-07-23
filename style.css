@@ -224,7 +224,7 @@ main article section .main-picture-credentials {
 }
 
 .editor-pick-section a {
-  font-family: georgia, "times new roman", arial;
+  font-family: georgia, sans-serif, arial;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -521,7 +521,7 @@ body .video-image-description span {
 }
 
 .more-image-description {
-  font-family: georgia, "times new roman", arial;
+  font-family: georgia, sans-serif, arial;
   color: rgb(153, 153, 153);
   font-size: 0.625rem;
   margin: 5px 0 8px 0;

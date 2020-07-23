@@ -6,6 +6,14 @@ body {
     color: #333;
 }
 
+/*property important for alignment of footer*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*properties for buttons in header and in article footer*/
 
 body .blue-buttons {
@@ -34,15 +42,16 @@ body h2 {
 
 /*header*/
 
-body header {
+body header nav{
+    position: fixed;
     left: 0px;
     right: 0px;
     display: grid;
     height: auto;
     max-width: 100%;
-    padding: 10px;
-    grid-template-columns: 1fr 1fr 1fr;    ;
-    border: 1px solid #ccc;
+    padding: 4px;
+    grid-template-columns: 1fr 1fr 1fr;    
+    border-bottom: 1px solid #ccc;
     align-items: center;
 }
 
@@ -217,7 +226,6 @@ main article section .main-picture-credentials {
     position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     top: 50%;
     bottom: auto;
     right: -45%;
@@ -240,13 +248,12 @@ main article section .main-picture-credentials {
 }
 
 .editor-pick-section {
-    width: 100%;
+    display: flex;
 }
 
 .editor-pick-section img {
     height: 70px;
     width: 70px;
-    float: left;
 }
 
 .editor-pick-section p {
@@ -255,7 +262,6 @@ main article section .main-picture-credentials {
     font-size: 14px;
     line-height: 17px;
     color: rgb(51, 51, 51);
-    float: right;
     width: 50%;
 }
 
@@ -390,12 +396,19 @@ body .video-image-description span {
     clear: both;
 }
 
+/*footer*/
+
+.whole-footer-section {
+    width:70%;
+}
+
 /*topfooter*/
 
 .topfooter {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 50px;
+    width: 100%;
 }
 
 .footer-headline {
@@ -409,7 +422,7 @@ body .video-image-description span {
 /*more-section*/
 
 .more-section {
-    max-width: 66%;
+    max-width: 80%;
     border-top: 1px solid black;
 }
 
@@ -489,22 +502,133 @@ body .video-image-description span {
 
 /*main-footer*/
 
-footer {
+main footer {
     margin-top: 50px;
-    width: 80%;
+    margin-bottom: 20px;
+}
+
+.footer-showcase {
+    margin-bottom: 25px;
+    padding-top: 8px;
+    border-top: 3px solid lightgray;
+}
+
+.footer-showcase a {
+    float: right;
+    color: rgb(86, 123, 149);
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11px;
+    text-decoration: none;
 }
 
 .main-footer-flex-container {
     display: flex;
     justify-content: center;
-    border: 1px solid black;
+}
+
+.main-footer-flex-container h4 {
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+    font-weight: 700;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.main-footer-flex-container a {
+    color: rgb(0, 0, 0);
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    height: 23px;
+    line-height: 16px;
+}
+
+.main-footer-flex-container a:hover {
+    text-decoration: underline;
 }
 
 .left-footer {
     display: flex;
+    justify-content: space-between;
+    width: 78%;
 }
 
 .left-footer-sub-menu {
     display: flex;
     flex-direction: column;
+}
+
+.right-footer {
+    width: 22%;
+    border-left: 1px solid lightgray;
+    padding-left: 15px;
+    margin-left: 50px;
+}
+
+.right-footer-thin-line {
+    border-top: 1px solid lightgray;
+    margin: 5px 0;
+}
+
+.footer-icon-and-text a{
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 700;
+    height: 25px;
+    line-height: 15px;
+    padding-bottom: 0px;
+}
+
+.footer-icon-and-text i{
+    width: 20px;
+}
+
+.right-footer-small-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-footer-small-links a{
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 150px;
+    font-size: 11px;
+    font-weight: 500;
+    height: 23px;
+    line-height: 21px;
+}
+
+/*subfooter*/
+
+.subfooter {
+    border-top: 1px solid lightgray;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0 20px 0;
+}
+
+.subfooter a {
+    font-size: 11px;
+    color: #666;
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    padding: 10px 0;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+
+.subfooter a:hover {
+    text-decoration: underline;
 }

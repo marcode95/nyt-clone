@@ -108,6 +108,7 @@ main article {
   max-height: 100px;
   width: auto;
   font-family: nyt-franklin, arial, helvetica, sans-serif;
+  margin: 15px 0;
 }
 
 /* main article header */
@@ -402,9 +403,14 @@ main article section .main-picture-credentials {
   line-height: 20px;
 }
 
+.theory-of-inflation-header p {
+  font-size: 13px;
+  line-height: 18px;
+}
+
 .theory-of-inflation-grid span {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .inflation-flex {
@@ -414,7 +420,8 @@ main article section .main-picture-credentials {
 }
 
 .theory-of-inflation-grid p {
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .theory-of-inflation-footer {
@@ -497,7 +504,7 @@ body .video-image-description span {
 /* footer */
 
 .whole-footer-section {
-  width: 70%;
+  width: 75%;
 }
 
 /* topfooter */
@@ -520,7 +527,7 @@ body .video-image-description span {
 /* more-section */
 
 .more-section {
-  max-width: 80%;
+  max-width: 900px;
   border-top: 1px solid black;
 }
 
@@ -579,7 +586,7 @@ body .video-image-description span {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 20%;
+  width: 350px;
   margin-left: 30px;
   border-top: 1px solid black;
 }

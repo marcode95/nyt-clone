@@ -11,7 +11,7 @@ An HTML and CSS mockup of the new york times page. We used Float, Grid and Flexb
 
 ## Live demo
 
-🔗 [New york times page](https://rawcdn.githack.com/marcode95/nyt-clone/16af6b1e94b5dd3f19860a25bdb811782c24cce3/index.html)
+🔗 [New york times page](https://rawcdn.githack.com/marcode95/nyt-clone/77cd2fab057a374ec1c5c2d89aacb501b53af140/index.html)
 
 ## Built With
 

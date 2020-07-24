@@ -242,21 +242,21 @@ main article section .main-picture-credentials {
   color: #326891;
 }
 
-.article-beginning-header p a {
-  color: black;
-}
-
-.sticky-footer-link-and-button a{
+.sticky-footer-link-and-button a {
   text-decoration: none;
   color: #000;
   font-size: 12px;
 }
 
-.fake-sticky-footer-link-and-button a{
+.fake-sticky-footer-link-and-button a {
   text-decoration: none;
   color: #000;
   font-size: 12px;
   display: none;
+}
+
+.article-beginning-header p a {
+  color: black;
 }
 
 .editor-pick-section a:hover {
@@ -703,7 +703,7 @@ main footer {
   width: 200px;
 }
 
-.sticky-footer-link-and-button button{
+.sticky-footer-link-and-button button {
   border: none;
   background: none;
   margin-left: 20px;
@@ -713,10 +713,9 @@ main footer {
   width: 200px;
 }
 
-.fake-sticky-footer-link-and-button button{
+.fake-sticky-footer-link-and-button button {
   border: none;
   background: none;
   margin-left: 20px;
   display: none;
 }
-
